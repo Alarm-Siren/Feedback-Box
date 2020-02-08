@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Feedback-Box)(type Legacy)(uri ${KIPRJMOD}/Feedback-Box.lib)(options "")(descr ""))
+)

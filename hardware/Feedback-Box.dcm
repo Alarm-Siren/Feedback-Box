@@ -1,0 +1,51 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FDN340P
+D P-MOSFET transistor, gate/source/drain
+K transistor PMOS P-MOS P-MOSFET
+F https://www.mouser.co.uk/datasheet/2/308/FDN340P-1305769.pdf
+$ENDCMP
+#
+$CMP FM24C16B
+D 16Kb serial FRAM nonvolatile Memory, SOIC-8
+K FRAM I2C Serial 5V FRAM NVRAM
+F http://www.cypress.com/file/136501/download
+$ENDCMP
+#
+$CMP LMV358IDR
+D Dual R/R Comparator, SOIC-8
+K dual opamp R/R
+F http://www.ti.com/lit/gpn/lmv358
+$ENDCMP
+#
+$CMP MM3Z7V5ST1G
+D Zener diode 7.5V
+K diode 7.5 Zener
+F https://www.mouser.co.uk/datasheet/2/308/MM3Z2V4ST1-D-1101657.pdf
+$ENDCMP
+#
+$CMP NHD-0216K1Z-FS(RGB)-FBW-REV1
+D LCD 16x2 Alphanumeric 18pin RGB Backlight, 8bit parallel, 5V VDD
+K display LCD character
+F https://www.mouser.co.uk/datasheet/2/291/NHD-0216K1Z-FS_RGB_FBW-REV1-39560.pdf
+$ENDCMP
+#
+$CMP SS16HE
+D Schottky diode
+K diode Schottky
+F https://www.mouser.co.uk/datasheet/2/308/SS16HE-1307114.pdf
+$ENDCMP
+#
+$CMP TLC59208FIPWR
+D 8-Channel, 8-Bit Fm+ I2C-Bus LED Sink Driver, TSSOP-16
+K LED current driver
+F http://www.ti.com/lit/gpn/tlc59208f
+$ENDCMP
+#
+$CMP Y200AA2C203NQ
+D Dual Pole Three Throw (DP3T) keylock switch
+K keylock switch lever ON-ON-ON dp3t
+F https://www.mouser.co.uk/datasheet/2/60/y-1382713.pdf
+$ENDCMP
+#
+#End Doc Library
