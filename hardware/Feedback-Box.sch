@@ -1188,12 +1188,6 @@ F 3 "" H 1550 10100 50  0001 C CNN
 	1    1550 10100
 	1    0    0    -1  
 $EndComp
-Text GLabel 3550 6350 2    50   Input ~ 0
-~RST
-Text GLabel 4350 4100 0    50   Input ~ 0
-~RST
-Wire Wire Line
-	4350 4100 4450 4100
 Wire Wire Line
 	850  9500 850  9600
 Wire Wire Line
@@ -2143,15 +2137,6 @@ Wire Wire Line
 Text GLabel 8300 1950 2    50   Input ~ 0
 SCR_B+
 Wire Wire Line
-	2500 6250 3450 6250
-Wire Wire Line
-	3550 6350 3450 6350
-Wire Wire Line
-	3450 6350 3450 6250
-Connection ~ 3450 6250
-Wire Wire Line
-	3450 6250 4000 6250
-Wire Wire Line
 	4000 5750 4000 5850
 $Comp
 L power:GND #PWR015
@@ -2626,4 +2611,19 @@ Wire Wire Line
 	5150 4100 5150 4300
 Wire Wire Line
 	4950 4100 5150 4100
+Connection ~ 3450 6250
+Wire Wire Line
+	2500 6250 3450 6250
+Wire Wire Line
+	3450 6350 3450 6250
+Wire Wire Line
+	3550 6350 3450 6350
+Text GLabel 3550 6350 2    50   Input ~ 0
+~RST
+Wire Wire Line
+	3450 6250 4000 6250
+Wire Wire Line
+	4350 4100 4450 4100
+Text GLabel 4350 4100 0    50   Input ~ 0
+~RST
 $EndSCHEMATC
