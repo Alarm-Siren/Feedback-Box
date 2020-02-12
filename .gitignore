@@ -27,4 +27,4 @@ fp-info-cache
 *.csv
 
 # SI Logo Source file
-SI-Logo-W32.5mm_H13.5mm.kicad_mod
+SI-Logo-*.kicad_mod

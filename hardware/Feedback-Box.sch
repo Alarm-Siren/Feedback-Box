@@ -5,12 +5,12 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Feedback Box Control Module"
-Date "2020-02-08"
-Rev "6"
+Date "2020-02-12"
+Rev "7"
 Comp "Shady Industries"
-Comment1 ""
+Comment1 "© Nicholas Parks Young, 2020. Some Rights Reserved."
 Comment2 "Repository: github.com/Alarm-Siren/Feedback-Box"
-Comment3 "Checked by Tom Bates"
+Comment3 "Checked by Tom Bates & Chris Sargeant"
 Comment4 "Drawn by Nick Parks Young"
 $EndDescr
 $Comp
@@ -625,29 +625,29 @@ F 3 "" H 8250 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C14
+L Device:C C15
 U 1 1 5E6CC394
-P 10000 6800
-F 0 "C14" H 10000 6900 50  0000 L CNN
-F 1 "100n" H 10000 6700 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10038 6650 50  0001 C CNN
-F 3 "~" H 10000 6800 50  0001 C CNN
-	1    10000 6800
+P 10250 6800
+F 0 "C15" H 10250 6900 50  0000 L CNN
+F 1 "100n" H 10250 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10288 6650 50  0001 C CNN
+F 3 "~" H 10250 6800 50  0001 C CNN
+	1    10250 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR035
 U 1 1 5E6CCA16
-P 10000 6450
-F 0 "#PWR035" H 10000 6300 50  0001 C CNN
-F 1 "+3V3" H 10015 6623 50  0000 C CNN
-F 2 "" H 10000 6450 50  0001 C CNN
-F 3 "" H 10000 6450 50  0001 C CNN
-	1    10000 6450
+P 10250 6450
+F 0 "#PWR035" H 10250 6300 50  0001 C CNN
+F 1 "+3V3" H 10265 6623 50  0000 C CNN
+F 2 "" H 10250 6450 50  0001 C CNN
+F 3 "" H 10250 6450 50  0001 C CNN
+	1    10250 6450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 7050 10000 6950
+	10250 7050 10250 6950
 Wire Wire Line
 	6100 10400 6100 10300
 Connection ~ 6100 10300
@@ -881,7 +881,7 @@ Wire Wire Line
 Wire Wire Line
 	4950 4000 5150 4000
 Wire Wire Line
-	10000 6450 10000 6650
+	10250 6450 10250 6650
 Wire Wire Line
 	5150 3800 5150 4000
 Wire Wire Line
@@ -1396,7 +1396,7 @@ Wire Wire Line
 Connection ~ 4250 10350
 Wire Wire Line
 	4250 10350 4250 10400
-Text GLabel 2900 4850 2    50   Input ~ 0
+Text GLabel 2900 7050 2    50   Input ~ 0
 LCD_E
 Wire Wire Line
 	2500 6650 2900 6650
@@ -1410,18 +1410,18 @@ Wire Wire Line
 	2500 7050 2900 7050
 Wire Wire Line
 	2500 7150 2900 7150
-Text GLabel 2900 4750 2    50   Input ~ 0
+Text GLabel 2900 6950 2    50   Input ~ 0
 LCD_RS
-Text GLabel 2900 5650 2    50   Input ~ 0
+Text GLabel 2900 7150 2    50   Input ~ 0
 LCD_D4
-Text GLabel 2900 5750 2    50   Input ~ 0
+Text GLabel 2900 4750 2    50   Input ~ 0
 LCD_D5
-Text GLabel 2900 5850 2    50   Input ~ 0
+Text GLabel 2900 4850 2    50   Input ~ 0
 LCD_D6
-Text GLabel 2900 5950 2    50   Input ~ 0
+Text GLabel 2900 4950 2    50   Input ~ 0
 LCD_D7
-Text GLabel 2900 6750 2    50   Input ~ 0
-BTN1
+Text GLabel 2900 5950 2    50   Input ~ 0
+BTN2
 Wire Wire Line
 	2500 4750 2900 4750
 Wire Wire Line
@@ -1429,10 +1429,10 @@ Wire Wire Line
 Wire Wire Line
 	2500 4950 2900 4950
 Text GLabel 2900 6850 2    50   Input ~ 0
-BTN2
-Text GLabel 2900 6950 2    50   Input ~ 0
+BTN5
+Text GLabel 2900 5750 2    50   Input ~ 0
 BTN3
-Text GLabel 2900 7050 2    50   Input ~ 0
+Text GLabel 2900 5650 2    50   Input ~ 0
 BTN4
 Wire Wire Line
 	2500 5650 2900 5650
@@ -1509,9 +1509,6 @@ Wire Wire Line
 Connection ~ 9500 7050
 Wire Wire Line
 	9750 7050 9750 6950
-Connection ~ 9750 7050
-Wire Wire Line
-	9750 7050 10000 7050
 Wire Wire Line
 	2500 5750 2900 5750
 Wire Wire Line
@@ -1535,8 +1532,8 @@ F 3 "https://www.mouser.co.uk/datasheet/2/670/cvs-1508-1310855.pdf" H 6640 4850 
 $EndComp
 Wire Wire Line
 	3450 4000 3450 5250
-Text GLabel 2900 7150 2    50   Input ~ 0
-BTN5
+Text GLabel 2900 5850 2    50   Input ~ 0
+BTN1
 Wire Wire Line
 	6200 2000 6100 2000
 Wire Wire Line
@@ -1681,7 +1678,7 @@ Wire Wire Line
 Connection ~ 6350 5000
 Wire Wire Line
 	6350 5000 6450 5000
-Text GLabel 2900 4950 2    50   Input ~ 0
+Text GLabel 2900 6750 2    50   Input ~ 0
 SPK
 Text GLabel 5850 3900 2    50   Input ~ 0
 SPK
@@ -1862,51 +1859,51 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x04 J4
 U 1 1 5EFE6C10
-P 10950 6700
-F 0 "J4" H 11030 6692 50  0000 L CNN
-F 1 "SSW-104-01-T-S" H 11030 6601 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 10950 6700 50  0001 C CNN
-F 3 "https://www.mouser.co.uk/datasheet/2/527/ssw_th-1507658.pdf" H 10950 6700 50  0001 C CNN
-	1    10950 6700
+P 9900 8200
+F 0 "J4" H 9980 8192 50  0000 L CNN
+F 1 "SSW-104-01-T-S" H 9980 8101 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9900 8200 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/527/ssw_th-1507658.pdf" H 9900 8200 50  0001 C CNN
+	1    9900 8200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR039
 U 1 1 5F00D5C7
-P 10700 6550
-F 0 "#PWR039" H 10700 6400 50  0001 C CNN
-F 1 "+5V" H 10715 6723 50  0000 C CNN
-F 2 "" H 10700 6550 50  0001 C CNN
-F 3 "" H 10700 6550 50  0001 C CNN
-	1    10700 6550
+P 9650 8050
+F 0 "#PWR039" H 9650 7900 50  0001 C CNN
+F 1 "+5V" H 9665 8223 50  0000 C CNN
+F 2 "" H 9650 8050 50  0001 C CNN
+F 3 "" H 9650 8050 50  0001 C CNN
+	1    9650 8050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR040
 U 1 1 5F00DEAE
-P 10700 6950
-F 0 "#PWR040" H 10700 6700 50  0001 C CNN
-F 1 "GND" H 10705 6777 50  0000 C CNN
-F 2 "" H 10700 6950 50  0001 C CNN
-F 3 "" H 10700 6950 50  0001 C CNN
-	1    10700 6950
+P 9650 8450
+F 0 "#PWR040" H 9650 8200 50  0001 C CNN
+F 1 "GND" H 9655 8277 50  0000 C CNN
+F 2 "" H 9650 8450 50  0001 C CNN
+F 3 "" H 9650 8450 50  0001 C CNN
+	1    9650 8450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10750 6700 10700 6700
+	9700 8200 9650 8200
 Wire Wire Line
-	10750 6600 10700 6600
+	9700 8100 9650 8100
 Wire Wire Line
-	10700 6600 10700 6550
+	9650 8100 9650 8050
 Wire Wire Line
-	10750 6800 10700 6800
+	9700 8300 9650 8300
 Wire Wire Line
-	10750 6900 10700 6900
+	9700 8400 9650 8400
 Wire Wire Line
-	10700 6900 10700 6950
-Text GLabel 10700 6700 0    50   Input ~ 0
+	9650 8400 9650 8450
+Text GLabel 9650 8200 0    50   Input ~ 0
 SDA
-Text GLabel 10700 6800 0    50   Input ~ 0
+Text GLabel 9650 8300 0    50   Input ~ 0
 SCL
 Text GLabel 2650 9500 2    50   Input ~ 0
 SCR_R-
@@ -2409,10 +2406,10 @@ Wire Notes Line
 	5250 7850 550  7850
 Wire Notes Line
 	550  3400 550  7850
-Text Notes 10450 6250 0    100  ~ 0
+Text Notes 9400 7750 0    100  ~ 0
 I2C Expansion Port
 Wire Notes Line
-	10400 6050 12000 6050
+	9350 7550 10950 7550
 Wire Notes Line
 	10750 2300 10750 5800
 Wire Notes Line
@@ -2426,23 +2423,19 @@ Decoupling Caps
 Wire Notes Line
 	8100 7450 8100 5950
 Wire Notes Line
-	8100 5950 10250 5950
-Wire Notes Line
-	10250 5950 10250 7450
-Wire Notes Line
-	8100 7450 10250 7450
+	10550 5950 10550 7450
 Text Notes 8150 10550 0    50   ~ 0
 USR~RST~ use FT232R's\ninternal pull-ups.
 Text Notes 3050 10350 2    50   ~ 0
 I2C Bus pullups in FRAM section
-Text Notes 11950 7300 2    50   ~ 0
+Text Notes 10900 8800 2    50   ~ 0
 I2C Bus pullups in FRAM section
 Wire Notes Line
-	12000 7350 10400 7350
+	10950 8850 9350 8850
 Wire Notes Line
-	10400 6050 10400 7350
+	9350 7550 9350 8850
 Wire Notes Line
-	12000 6050 12000 7350
+	10950 7550 10950 8850
 $Comp
 L Device:R_POT RV2
 U 1 1 5E6E15FD
@@ -2626,4 +2619,32 @@ Wire Wire Line
 	4350 4100 4450 4100
 Text GLabel 4350 4100 0    50   Input ~ 0
 ~RST
+$Comp
+L Device:C C14
+U 1 1 5E51FA89
+P 10000 6800
+F 0 "C14" H 10000 6900 50  0000 L CNN
+F 1 "100n" H 10000 6700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10038 6650 50  0001 C CNN
+F 3 "~" H 10000 6800 50  0001 C CNN
+	1    10000 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10000 6650 10000 6550
+Wire Wire Line
+	10000 6550 9750 6550
+Connection ~ 9750 6550
+Wire Wire Line
+	9750 7050 10000 7050
+Connection ~ 9750 7050
+Wire Wire Line
+	10000 6950 10000 7050
+Connection ~ 10000 7050
+Wire Wire Line
+	10000 7050 10250 7050
+Wire Notes Line
+	8100 7450 10550 7450
+Wire Notes Line
+	8100 5950 10550 5950
 $EndSCHEMATC
