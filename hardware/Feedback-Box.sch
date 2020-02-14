@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Feedback Box Control Module"
-Date "2020-02-12"
-Rev "7"
+Date "2020-02-14"
+Rev "8"
 Comp "Shady Industries"
 Comment1 "© Nicholas Parks Young, 2020. Some Rights Reserved."
 Comment2 "Repository: github.com/Alarm-Siren/Feedback-Box"
@@ -368,10 +368,6 @@ Wire Wire Line
 	8150 8950 7800 8950
 Text GLabel 2900 6450 2    50   Input ~ 0
 RXD
-Wire Wire Line
-	7800 8550 8150 8550
-Wire Wire Line
-	8150 8650 7800 8650
 $Comp
 L power:+5V #PWR023
 U 1 1 5E3F5517
@@ -385,9 +381,9 @@ F 3 "" H 6900 8050 50  0001 C CNN
 $EndComp
 Text GLabel 2900 6550 2    50   Input ~ 0
 TXD
-Text GLabel 8150 8650 2    50   Input ~ 0
+Text GLabel 8450 8650 2    50   Input ~ 0
 TXD
-Text GLabel 8150 8550 2    50   Input ~ 0
+Text GLabel 8450 8550 2    50   Input ~ 0
 RXD
 Text GLabel 6050 9250 0    50   Input ~ 0
 USB~RST
@@ -521,12 +517,12 @@ Connection ~ 1900 4350
 $Comp
 L power:GNDS #PWR02
 U 1 1 5E60ED41
-P 1300 2750
-F 0 "#PWR02" H 1300 2500 50  0001 C CNN
-F 1 "GNDS" H 1300 2600 50  0000 C CNN
-F 2 "" H 1300 2750 50  0001 C CNN
-F 3 "" H 1300 2750 50  0001 C CNN
-	1    1300 2750
+P 1300 2950
+F 0 "#PWR02" H 1300 2700 50  0001 C CNN
+F 1 "GNDS" H 1300 2800 50  0000 C CNN
+F 2 "" H 1300 2950 50  0001 C CNN
+F 3 "" H 1300 2950 50  0001 C CNN
+	1    1300 2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -780,8 +776,6 @@ F 3 "" H 1900 7550 50  0001 C CNN
 	1    1900 7550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 2750 1300 2600
 Connection ~ 1300 2200
 Wire Wire Line
 	6700 3000 6700 2900
@@ -1452,20 +1446,6 @@ $EndComp
 Wire Wire Line
 	6800 2900 6700 2900
 $Comp
-L power:PWR_FLAG #FLG01
-U 1 1 5E396AE3
-P 1350 2600
-F 0 "#FLG01" H 1350 2675 50  0001 C CNN
-F 1 "PWR_FLAG" V 1350 2728 50  0001 L CNN
-F 2 "" H 1350 2600 50  0001 C CNN
-F 3 "~" H 1350 2600 50  0001 C CNN
-	1    1350 2600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1350 2600 1300 2600
-Connection ~ 1300 2600
-$Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5E3B12FD
 P 5350 1950
@@ -1857,53 +1837,42 @@ Connection ~ 4600 2900
 Wire Wire Line
 	4600 2900 4850 2900
 $Comp
-L Connector_Generic:Conn_01x04 J4
-U 1 1 5EFE6C10
-P 9900 8200
-F 0 "J4" H 9980 8192 50  0000 L CNN
-F 1 "SSW-104-01-T-S" H 9980 8101 50  0000 L CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9900 8200 50  0001 C CNN
-F 3 "https://www.mouser.co.uk/datasheet/2/527/ssw_th-1507658.pdf" H 9900 8200 50  0001 C CNN
-	1    9900 8200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR039
 U 1 1 5F00D5C7
-P 9650 8050
-F 0 "#PWR039" H 9650 7900 50  0001 C CNN
-F 1 "+5V" H 9665 8223 50  0000 C CNN
-F 2 "" H 9650 8050 50  0001 C CNN
-F 3 "" H 9650 8050 50  0001 C CNN
-	1    9650 8050
+P 9850 8050
+F 0 "#PWR039" H 9850 7900 50  0001 C CNN
+F 1 "+5V" H 9865 8223 50  0000 C CNN
+F 2 "" H 9850 8050 50  0001 C CNN
+F 3 "" H 9850 8050 50  0001 C CNN
+	1    9850 8050
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR040
 U 1 1 5F00DEAE
-P 9650 8450
-F 0 "#PWR040" H 9650 8200 50  0001 C CNN
-F 1 "GND" H 9655 8277 50  0000 C CNN
-F 2 "" H 9650 8450 50  0001 C CNN
-F 3 "" H 9650 8450 50  0001 C CNN
-	1    9650 8450
+P 9850 8750
+F 0 "#PWR040" H 9850 8500 50  0001 C CNN
+F 1 "GND" H 9855 8577 50  0000 C CNN
+F 2 "" H 9850 8750 50  0001 C CNN
+F 3 "" H 9850 8750 50  0001 C CNN
+	1    9850 8750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 8200 9650 8200
+	9900 8200 9850 8200
 Wire Wire Line
-	9700 8100 9650 8100
+	9900 8100 9850 8100
 Wire Wire Line
-	9650 8100 9650 8050
+	9850 8100 9850 8050
 Wire Wire Line
-	9700 8300 9650 8300
+	9900 8300 9850 8300
 Wire Wire Line
-	9700 8400 9650 8400
+	9900 8700 9850 8700
 Wire Wire Line
-	9650 8400 9650 8450
-Text GLabel 9650 8200 0    50   Input ~ 0
+	9850 8700 9850 8750
+Text GLabel 9850 8200 0    50   Input ~ 0
 SDA
-Text GLabel 9650 8300 0    50   Input ~ 0
+Text GLabel 9850 8300 0    50   Input ~ 0
 SCL
 Text GLabel 2650 9500 2    50   Input ~ 0
 SCR_R-
@@ -2223,8 +2192,6 @@ F 3 "https://www.mouser.co.uk/datasheet/2/308/MM3Z2V4ST1-D-1101657.pdf" H 2300 2
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1300 2200 1300 2600
-Wire Wire Line
 	3000 2400 3000 2450
 Wire Wire Line
 	4450 1500 4600 1500
@@ -2407,7 +2374,7 @@ Wire Notes Line
 Wire Notes Line
 	550  3400 550  7850
 Text Notes 9400 7750 0    100  ~ 0
-I2C Expansion Port
+Expansion Port
 Wire Notes Line
 	9350 7550 10950 7550
 Wire Notes Line
@@ -2428,14 +2395,8 @@ Text Notes 8150 10550 0    50   ~ 0
 USR~RST~ use FT232R's\ninternal pull-ups.
 Text Notes 3050 10350 2    50   ~ 0
 I2C Bus pullups in FRAM section
-Text Notes 10900 8800 2    50   ~ 0
+Text Notes 10900 9100 2    50   ~ 0
 I2C Bus pullups in FRAM section
-Wire Notes Line
-	10950 8850 9350 8850
-Wire Notes Line
-	9350 7550 9350 8850
-Wire Notes Line
-	10950 7550 10950 8850
 $Comp
 L Device:R_POT RV2
 U 1 1 5E6E15FD
@@ -2647,4 +2608,65 @@ Wire Notes Line
 	8100 7450 10550 7450
 Wire Notes Line
 	8100 5950 10550 5950
+$Comp
+L Device:R R31
+U 1 1 5E49AD78
+P 8100 8550
+F 0 "R31" V 8000 8550 50  0000 C CNN
+F 1 "1k" V 8100 8550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8030 8550 50  0001 C CNN
+F 3 "~" H 8100 8550 50  0001 C CNN
+	1    8100 8550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R32
+U 1 1 5E49B774
+P 8100 8650
+F 0 "R32" V 8200 8650 50  0000 C CNN
+F 1 "1k" V 8100 8650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 8030 8650 50  0001 C CNN
+F 3 "~" H 8100 8650 50  0001 C CNN
+	1    8100 8650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7950 8550 7800 8550
+Wire Wire Line
+	7950 8650 7800 8650
+Wire Wire Line
+	8450 8550 8250 8550
+Wire Wire Line
+	8450 8650 8250 8650
+$Comp
+L Connector_Generic:Conn_01x07 J4
+U 1 1 5E5AD0A1
+P 10100 8400
+F 0 "J4" H 10180 8442 50  0000 L CNN
+F 1 "SSW-107-01-T-S" H 10180 8351 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x07_P2.54mm_Vertical" H 10100 8400 50  0001 C CNN
+F 3 "https://www.mouser.co.uk/datasheet/2/527/ssw_th-1507658.pdf" H 10100 8400 50  0001 C CNN
+	1    10100 8400
+	1    0    0    -1  
+$EndComp
+Text GLabel 9850 8500 0    50   Input ~ 0
+RXD
+Wire Wire Line
+	9850 8500 9900 8500
+Wire Wire Line
+	9850 8600 9900 8600
+Text GLabel 9850 8600 0    50   Input ~ 0
+TXD
+Wire Notes Line
+	10950 9150 9350 9150
+Wire Notes Line
+	10950 7550 10950 9150
+Wire Notes Line
+	9350 7550 9350 9150
+Text GLabel 9650 8400 0    50   Input ~ 0
+~RST
+Wire Wire Line
+	9650 8400 9900 8400
+Wire Wire Line
+	1300 2200 1300 2950
 $EndSCHEMATC
