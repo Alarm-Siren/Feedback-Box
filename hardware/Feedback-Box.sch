@@ -2280,9 +2280,9 @@ F 3 "https://www.mouser.co.uk/datasheet/2/308/FDN340P-1305769.pdf" H 10300 1650 
 	-1   0    0    1   
 $EndComp
 Text Notes 600  8300 0    100  ~ 0
-LED Controller\nI2C Address: 40
+LED Controller\nI2C Address: 0x40
 Text Notes 7450 3750 0    100  ~ 0
-16Kb FRAM\nI2C Address: Ax
+16Kb FRAM\nI2C Address: 0xAX
 Text Notes 7650 750  0    100  ~ 0
 RGB Screen LED Inverters
 Text Notes 5650 7750 0    100  ~ 0
