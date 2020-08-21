@@ -5,8 +5,8 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 1
 Title "Feedback Box Control Module"
-Date "2020-02-14"
-Rev "8"
+Date "2020-08-21"
+Rev "9"
 Comp "Shady Industries"
 Comment1 "© Nicholas Parks Young, 2020. Some Rights Reserved."
 Comment2 "Repository: github.com/Alarm-Siren/Feedback-Box"
@@ -1605,8 +1605,8 @@ L Device:R R19
 U 1 1 5E755720
 P 6350 4650
 F 0 "R19" V 6250 4650 50  0000 C CNN
-F 1 "220" V 6350 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 6280 4650 50  0001 C CNN
+F 1 "62" V 6350 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_1210_3225Metric_Pad1.42x2.65mm_HandSolder" V 6280 4650 50  0001 C CNN
 F 3 "~" H 6350 4650 50  0001 C CNN
 	1    6350 4650
 	-1   0    0    1   
@@ -2280,9 +2280,9 @@ F 3 "https://www.mouser.co.uk/datasheet/2/308/FDN340P-1305769.pdf" H 10300 1650 
 	-1   0    0    1   
 $EndComp
 Text Notes 600  8300 0    100  ~ 0
-LED Controller\nI2C Address: 0x40
+LED Controller\nI2C Address: 0x20
 Text Notes 7450 3750 0    100  ~ 0
-16Kb FRAM\nI2C Address: 0xAX
+16Kb FRAM\nI2C: 0x50-0x57
 Text Notes 7650 750  0    100  ~ 0
 RGB Screen LED Inverters
 Text Notes 5650 7750 0    100  ~ 0
